@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    color: aliceblue;
+    border: none;
+    background: linear-gradient(90deg, #a9a6ae 0%, #757374 50%, #bab9b8 100%);
+
+}
+
+.img-cbc{
+    width: 200px;
+    height: auto;
+}
+
+ul{
+   display: flex;
+   gap: 40px;
+   list-style: none;
+   font-size: 25px;
+   border: none;
+}
+
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(228, 239, 249);
+
+}
+
+.esquerda{
+    width: 50vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#meuNome{
+    font-size: 70px;
+    color: red;
+     font-family: "Playfair Display", serif;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 110px;
+    
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.img-insta{
+    width: 100px;
+    height: auto;
+    
+}
+.img-face{
+    width: 65px;
+    height: auto;
+}
+.img-whats{
+    width: 70px;
+    height: auto;
+}
+
+/* Brilho personalizado para cada rede social */
+.img-whats:hover {
+  filter: drop-shadow(0 0 15px #25D366) brightness(1.4);
+  transform: scale(1.1);
+}
+
+.img-face:hover {
+  filter: drop-shadow(0 0 15px #1877F2) brightness(1.4);
+  transform: scale(1.1);
+}
+
+.img-insta:hover {
+  /* degrade estilo instagram */
+  filter: drop-shadow(0 0 20px #E1306C) brightness(1.5);
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.direita{
+    width: 50vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#minhaFoto{
+    width: 800px;
+    height: 800px;
+}
+
+footer{
+    width: 200vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(70, 29, 252);
+    background: linear-gradient(90deg, #686669 0%, #afadae 50%, #706f6d 100%);
+}
+
+.b-r{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: rgb(61, 61, 61)
+}
+
+
