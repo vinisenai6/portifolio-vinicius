@@ -1,7 +1,7 @@
-// Espera o carregamento completo da página
+
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ====== 1️⃣ Animação de entrada suave (fade-in + slide) ======
+
   const sections = document.querySelectorAll(".esquerda, .direita");
   
   sections.forEach((el, i) => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.transform = "translateY(40px)";
     el.style.transition = "all 1s ease";
 
-    // pequeno delay para criar um efeito escalonado
+  
     setTimeout(() => {
       el.style.opacity = "1";
       el.style.transform = "translateY(0)";
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // ====== 3️⃣ Ícones das redes sociais flutuando ======
 
 
 
-  // ====== 4️⃣ Efeito de hover suave nos links do menu ======
+
+
   const links = document.querySelectorAll("header ul li");
 
   links.forEach(link => {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ///////////////////
 document.addEventListener("DOMContentLoaded", () => {
-  // Efeito pulsante extra durante o brilho
+
   const icones = document.querySelectorAll(".imagens img");
 
   icones.forEach((icone) => {
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const itensCabecalho = document.querySelectorAll("header ul li");
 
-// Adiciona os efeitos com JavaScript
+
 itensCabecalho.forEach(item => {
-  // Quando o mouse entra
+ 
   item.addEventListener("mouseenter", () => {
     item.style.color = "red";
     item.style.textShadow = "0 0 10px red, 0 0 20px red, 0 0 40px red";
@@ -67,7 +67,7 @@ itensCabecalho.forEach(item => {
     item.style.transition = "all 0.3s ease";
   });
 
-  // Quando o mouse sai
+
   item.addEventListener("mouseleave", () => {
     item.style.color = "aliceblue";
     item.style.textShadow = "none";
@@ -76,7 +76,7 @@ itensCabecalho.forEach(item => {
 });
 
 
-// --- EFEITO NO FOOTER ---
+
 const itensFooter = document.querySelectorAll("footer, footer *");
 
 itensFooter.forEach(item => {
@@ -109,12 +109,12 @@ foto.addEventListener("mouseleave", () => {
 
 const nome = document.getElementById("meuNome");
 
-// Garante que o texto já comece vermelho
+
 nome.style.color = "red";
 
-// Quando o mouse entra, começa o brilho pulsante
+
 nome.addEventListener("mouseenter", () => {
-  // Cria a animação de brilho pulsando
+
   const animacao = nome.animate(
     [
       { textShadow: "0 0 5px red, 0 0 10px red" },
@@ -128,11 +128,11 @@ nome.addEventListener("mouseenter", () => {
     }
   );
 
-  // Guarda a animação pra poder parar depois
+ 
   nome._animacao = animacao;
 });
 
-// Quando o mouse sai, para o brilho mas mantém o texto vermelho
+
 nome.addEventListener("mouseleave", () => {
   if (nome._animacao) nome._animacao.cancel();
   nome.style.textShadow = "none";
